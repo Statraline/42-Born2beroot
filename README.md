@@ -27,6 +27,26 @@ Création d'un script Bash (`monitoring.sh`) qui s'exécute toutes les 10 minute
 * Nombre de processeurs physiques/virtuels.
 * Utilisation de la RAM et du Disque.
 * Charge CPU et dernière connexion sudo.
+## 🌟 Partie Bonus
 
+Pour valider le projet à **125%**, j'ai transformé cette machine virtuelle en un véritable serveur web sécurisé.
+
+### 1. Stack Web (LEMP)
+Installation et configuration d'un environnement serveur complet :
+* **Lighttpd** : Serveur Web léger et performant.
+* **MariaDB** : Système de gestion de base de données relationnelle (SQL).
+* **PHP (FPM)** : Langage de script pour le traitement dynamique.
+
+### 2. WordPress
+* Déploiement d'un site **WordPress** local.
+* Configuration de la base de données et connexion SQL.
+* Site accessible via l'adresse IP de la VM.
+
+### 3. Service Supplémentaire : Fail2Ban 🛡️
+J'ai installé et configuré **Fail2Ban** pour protéger le serveur contre les attaques par force brute (Brute-Force) :
+* Analyse des logs en temps réel.
+* Bannissement automatique des IPs après plusieurs échecs d'authentification (sur le port SSH 4242 et sur le serveur Web).
+* Configuration d'une durée de bannissement (bantime) spécifique.
+* 
 ## 📂 Contenu du dépôt
 * `monitoring.sh` : Le script de surveillance système développé en Bash.
